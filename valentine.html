@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Day's Card</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="headlinecontainer">
+        <div id="shine">Happy Valentine's Day Unichankuuuu🩵</div>
+    </div>
+
+    <div class="gallery">
+
+        <img src="my girl with ice cream.jpeg" alt="lovely ice cream">
+        <img src="best couple.jpeg" alt="my partner">
+        <img src="couple in church.jpeg" alt="church girl">
+        <img src="couple.jpeg" alt="Pasangan Serasih">
+        <img src="college.jpeg" alt="Ngampus">
+
+    </div>
+
+    <div id="Pesan">
+        <div id="shine">
+            <p>Love You 3000</p>
+            <p>Love botaaaaaa onnong</p>
+            <p>Maaf Hadiahnya Kurang Sempurna</p>
+        </div>
+    </div>
+    <audio id="valentineMusic" loop>
+        <source src="Valentine.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <script>
+        // Memutar musik saat halaman dimuat
+        window.addEventListener("load", function() {
+        let userConsent = confirm("Apakah Anda ingin memutar musik?");
+        if (userConsent) {
+            document.getElementById("valentineMusic").play();
+        }
+    });
+
+        function pauseMusic() {
+            document.getElementById("valentineMusic").pause();
+        }
+    </script>
+</body>
+</html>
